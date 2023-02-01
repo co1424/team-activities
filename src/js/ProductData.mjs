@@ -10,6 +10,7 @@ export default class ProductData {
   constructor(category) {
     this.category = category;
     this.path = `../json/${this.category}.json`;
+    console.log(this.path);
   }
   getData() {
     return fetch(this.path)
@@ -18,6 +19,10 @@ export default class ProductData {
   }
   async findProductById(id) {
     const products = await this.getData();
-    return products.find((item) => item.Id === id);
+    console.log(products);
+    console.log(id);
+    const x = products.find((item) => item.Id === id);
+    console.log(x);
+    return x;
   }
 }
