@@ -1,4 +1,4 @@
-import{s,a as n}from"./utils.2952622c.js";/* empty css              */function l(t){if(t.ok)return t.json();throw new Error("Bad Response")}class u{constructor(o){this.category=o,this.path=`../json/${this.category}.json`,console.log(this.path)}getData(){return fetch(this.path).then(l).then(o=>o)}async findProductById(o){const a=await this.getData();console.log(a),console.log(o);const c=a.find(i=>i.Id===o);return console.log(c),c}}function h(t){return`<section class="product-detail"> <h3>${t.Brand.Name}</h3>
+import{s,a as n}from"./utils.0c10ef74.js";/* empty css              */function l(t){if(t.ok)return t.json();throw new Error("Bad Response")}class u{constructor(o){this.category=o,this.path=`../json/${this.category}.json`,console.log(this.path)}getData(){return fetch(this.path).then(l).then(o=>o)}async findProductById(o){const a=await this.getData();console.log(a),console.log(o);const c=a.find(i=>i.Id===o);return console.log(c),c}}function h(t){return`<section class="product-detail"> <h3>${t.Brand.Name}</h3>
     <h2 class="divider">${t.NameWithoutBrand}</h2>
     <img
       class="divider"
