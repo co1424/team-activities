@@ -26,7 +26,6 @@ export default class ProductList {
     async init() {
       // our dataSource will return a Promise...so we can use await to resolve it.
       const list = await this.dataSource.getData();
-      console.log(list);
       // render the list 
       this.renderList(list)
     }
@@ -34,7 +33,6 @@ export default class ProductList {
      renderList(list) {
       // este id no va "880RT"  "989CG"
       const filteredList = list.filter(id => id.Id != "880RT" && id.Id != "989CG")
-      console.log(filteredList)
       const htmlStrings = filteredList.map(productCardTemplate);
       this.listElement.insertAdjacentHTML("afterbegin", htmlStrings.join(""));
     }
