@@ -106,6 +106,8 @@ button {
 
 .divider {
   border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .title {
@@ -183,9 +185,10 @@ button {
 .product-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style-type: none;
   padding: 0;
+  flex-direction: row;
 }
 
 .product-list a {
@@ -290,6 +293,7 @@ button {
   font-size: var(--small-font);
   /* max-height: 120px; */
   align-items: center;
+  width: 100%;
 }
 
 .cart-card__image {
