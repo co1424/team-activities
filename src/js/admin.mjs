@@ -60,7 +60,10 @@ export default class Admin {
       console.log(err);
     }
     }
-    function loginFormTemplate() {
+
+}
+
+function loginFormTemplate() {
     return `<fieldset class="login-form">
     <legend>Login</legend>
     <p>
@@ -87,4 +90,3 @@ function orderTemplate() {
   }
 
 
-}
